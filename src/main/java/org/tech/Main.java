@@ -16,13 +16,14 @@ public class Main {
         Model mo = new Model(5510,"Inspiron 15 series",
                     sdf.parse("11-11-2011"),"Dell", Arrays.asList(m,m2));
         try (FileWriter writer = new
-              FileWriter("C:\\Users\\vishn\\IdeaProjects\\SampleMavenProject\\target\\classes\\org\\tech\\m.json"))
+              FileWriter("C:\\Users\\vishn\\IdeaProjects\\MavenProject\\target\\classes\\org\\tech\\m.json"))
       {
           gson.toJson(mo, writer);}
       catch (Exception e){
           e.printStackTrace();
       }
-        System.out.println(gson.toJson(mo));
+        String s=gson.toJson(mo);
+        System.out.println(s);
 
     }
 }
