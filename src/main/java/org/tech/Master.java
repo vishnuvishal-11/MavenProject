@@ -19,7 +19,7 @@ EmployeeData employeeData=new EmployeeData(5510,"Inspiron 15 series",
         sdf.parse("22-12-2011"),"Dell", Arrays.asList(employee,employee2));
         Gson gson = new Gson();
         try (FileWriter writer = new
-                FileWriter("C:\\Users\\vishn\\IdeaProjects\\SampleMavenProjec\\target\\classes\\org\\tech\\m.json"))
+                FileWriter("C:\\Users\\vishn\\IdeaProjects\\SampleMavenProject\\target\\classes\\org\\tech\\m.json"))
         {
             gson.toJson(employeeData, writer);}
         catch (Exception e){
